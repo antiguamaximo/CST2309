@@ -1,0 +1,8 @@
+Refer to Tutorial 2
+Complete Session 2.3  pages HTML 137 to HTML 159
+Complete and Upload the HW 3 Worksheet
+Deploy the  Website for a Fitness Club to Netlify
+Add the Netlify URL as a comment in the HW3 Submission
+Use the tss_home as the index.html file
+Complete Session 2.3  Quick Check
+Complete and Upload the attached HW3 Worksheet
