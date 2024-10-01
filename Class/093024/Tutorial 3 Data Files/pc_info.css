@@ -10,8 +10,6 @@
    Filename: pc_info.css
 
 */
-
-div.infobox {display: none;}
 /* Main Styles */
 main {
    position: relative;
@@ -37,7 +35,6 @@ div#info1 {
 
 
 /* Second Infographic */
-
 div#info2 {
    display: block;
    top: 185px;
@@ -48,7 +45,7 @@ div#info2 {
 div#info3 {
    display: block;
    top: 135px;
-   left: 75px;
+   left: 75%;
 }
 
 
