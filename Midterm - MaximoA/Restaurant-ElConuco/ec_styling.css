@@ -5,10 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
+/*Body*/
 body {
     font-family: "M PLUS 1p", sans-serif;
     font-weight: 700;
@@ -16,58 +16,57 @@ body {
     line-height: 1.5;
     background: rgb(0,45,98);
     background: linear-gradient(180deg, rgba(0,45,98,1) 10%, rgba(206,17,38,1) 40%, rgba(255,255,255,1) 65%, rgba(0,99,0,1) 90%);
-    width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
+
 
 /*Header*/
 header {
     background: rgb(0,99,0);
     background: linear-gradient(90deg, rgba(0,99,0,1) 0%, rgba(6,169,6,1) 100%);
-    display: flex;
-    justify-content: center;
     width: 1200px;
-    height: 200px;
+    height: 160px;
     overflow: hidden;
 }
 
 .leftHeader {
-    width: 400px;
-    height: 280px;
-    padding-left: 0px;
+    float: left;
+    width: 33%;
+    height: 120%;
 }
 .mainHeader {
-    max-width: 550px;
-    height: 150px;
-    padding-top: 50px;
+    float: left;
+    width: 33%;
+    height: 100%;
+    padding-top: 20px;
 }
 
 .rigthHeader {
-    width: 400px;
-    height: 280px;
+    float: right;
+    width: 33%;
+    height: 120%;
     transform: scaleX(-1);
 }
 
-/*Body*/
-
 /*Nav*/
 nav {
-    background: transparent;
-    font-size: 15px;
+    font-size: 1.2em;
     width: 1200px;
-    height: px;
+    height: 100%;
 }
 
 nav ul li {
-	background-color: white;	
+	background-color: black;	
 	display: block;
 	float: left;
 	text-align: center;
 	width: 25%;	
 }
 
-
 nav ul li a {
-	color: black;	
+	color: white;	
 	display: block;
 	height: 1.5em;	
 }
@@ -78,50 +77,78 @@ nav ul li a:hover{
 
 /*Main*/
 main {
-    padding: 0px;
     width: 1200px;
-    height: 590px;
-    border-radius: 5px;
-    box-shadow: 0 7px 5px rgba(61, 61, 61, 0.9); 
-    background: white;    
+    box-shadow: 0px 0px 10px rgba(61, 61, 61, 0.5); 
+    background: white;
+    padding: 0px;
+    overflow: auto;
 }
 
-section#aboutUs {
-    background: transparent;
-    padding: 5px;
-    width: 900px;
-    height: 490px;
-    display: flex;
-    justify-content: space-between;
+
+/*Left Div*/
+div#secFlag {
+    width: 25%;
+    float: left;
+    border-collapse: collapse;
 }
 
-div#secFlag > img{
-
+div#secFlag > img, figcaption{
+    width: 90%;
+    height: 100%;
+    border-radius: 15px 5px 5px 15px; 
+    text-align: left;
+    padding-left: 5px;
+    /* padding-top: 120px;
+    margin-right: 10px; */
+}
+main section {
+    display: block;
+}
+/*Middle Div*/
+div#mainAboutUs {
+    width: 50%;
+    height: 70%;
+    border-collapse: collapse;
 }
 
-div#mainAboutUs > h2 {
+div#mainAboutUs h2 {
+    padding-top: 30px;
     font-size: 40px;
     text-align: center;
     text-decoration: underline;
-    
 }
-div#mainAboutUs >p {
+
+div#mainAboutUs > p {
     font-weight: 500;
+    padding-top: 20px;
 }
 
+/*Right div*/
 div#specialDay {
-
+    width: 25%;
+    height: 100%;
+    float: right;
+    margin-left: auto;
+    border-collapse: collapse;
 }
 div#specialDay > img {
-    width: 200px;
-    height: auto;
+    width: 90%;
+    height: 100%;
+    margin: 0px;
+
+}
+/*Bottom Links Div*/
+div#bottomLinks{
+    font-size: 15px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
 }
 
-div#bottomLinks{
-    background: transparent;
-    font-size: 15px;
-    width: 1200px;
-    height: 29px;
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
 }
 
 /*Footer*/
