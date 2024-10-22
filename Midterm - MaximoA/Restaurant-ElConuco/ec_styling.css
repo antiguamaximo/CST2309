@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    background: rgb(0,45,98);
+    background: linear-gradient(180deg, rgba(0,45,98,1) 10%, rgba(206,17,38,1) 40%, rgba(255,255,255,1) 65%, rgba(0,99,0,1) 90%);
+    width: 1440px;
+}
+
+/*Header*/
+header {
+    background: rgb(0,99,0);
+    background: linear-gradient(90deg, rgba(0,99,0,1) 0%, rgba(6,169,6,1) 100%);
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.leftHeader {
+    width: 400px;
+    height: 280px;
+    padding-left: 0px;
+}
+.mainHeader {
+    max-width: 550px;
+    height: 150px;
+    padding-top: 50px;
+}
+
+.rigthHeader {
+    width: 400px;
+    height: 280px;
+    transform: scaleX(-1);
+}
+
+/*Body*/
+
+/*Nav*/
+nav {
+    background: transparent;
+    font-size: 15px;
+    width: 1200px;
+    height: px;
+}
+
+nav ul li {
+	background-color: white;	
+	display: block;
+	float: left;
+	text-align: center;
+	width: 25%;	
+}
+
+
+nav ul li a {
+	color: black;	
+	display: block;
+	height: 1.5em;	
+}
+
+nav ul li a:hover{
+    background-color: green;
+}
+
+/*Main*/
+main {
+    padding: 0px;
+    width: 1200px;
+    height: 590px;
+    border-radius: 5px;
+    box-shadow: 0 7px 5px rgba(61, 61, 61, 0.9); 
+    background: white;    
+}
+
+section#aboutUs {
+    background: transparent;
+    padding: 5px;
+    width: 900px;
+    height: 490px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div#secFlag > img{
+
+}
+
+div#mainAboutUs > h2 {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+div#mainAboutUs >p {
+    font-weight: 500;
+}
+
+div#specialDay {
+
+}
+div#specialDay > img {
+    width: 200px;
+    height: auto;
+}
+
+div#bottomLinks{
+    background: transparent;
+    font-size: 15px;
+    width: 1200px;
+    height: 29px;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    width: 1200px;
+    height: 0.5px;
+}
