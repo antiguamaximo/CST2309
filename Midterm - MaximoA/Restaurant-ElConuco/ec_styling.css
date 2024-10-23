@@ -1,12 +1,68 @@
 @charset "utf-8";
+/*Main*/
+
+/*Left Image*/
+div#sideFlag {
+    padding: 10px;
+    margin: 0px;
+    width: 25%;
+    height: 100%;
+    
+}
+
+div#sideFlag img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Section  */
+article {
+    text-align: center;
+    width: 50%;
+    height: 80%;
+}
+
+article section h2{
+    font-size: 5vh;
+    padding-bottom: 10PX;
+}
+
+article section p {
+    font-weight: 400;
+}
+
+section#menu{
+    width: 100%;
+}
+
+section#appetizers img, section#mainCourse img{
+    width: 25%;
+}
 
 
+/*Aside Section*/
+aside {
+    width: 25%;
+    height: 100%;
+}
 
+p#specialPar{
+    font-size: 3.6vh;
+    
+}
 
+aside a img {
+    width: 90%;
+    height: 100%;
+}
+
+p#foodPar {
+    text-align: center;
+}
 /*Bottom Links Div*/
 div#bottomLinks {
     font-size: 1.2em;
-    width: 60vh;
+    width: 40vh;
     height: auto;
 }
 
