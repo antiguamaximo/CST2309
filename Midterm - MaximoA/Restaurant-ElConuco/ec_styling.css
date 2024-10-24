@@ -33,12 +33,24 @@ article section p {
 
 section#menu{
     width: 100%;
+    
+}
+
+section#appetizers, section#mainCourse{
+    padding: 20px;
+    width: 100%;
+}
+
+section#appetizers h1, section#mainCourse h1{
+    text-align: center;
+    font-size: 4vh;
+    border: dotted 
 }
 
 section#appetizers img, section#mainCourse img{
-    width: 25%;
+    width: 15%;
+    
 }
-
 
 /*Aside Section*/
 aside {
