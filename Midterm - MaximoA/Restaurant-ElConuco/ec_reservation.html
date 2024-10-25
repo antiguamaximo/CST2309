@@ -31,8 +31,8 @@
             <li><a href="ec_reservation.html">Reservation</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="reservation">
+    <main id="reservMain">
+        <section class="reservation">
             <h1 >Reservations</h1>
             <p style="font-weight: 500;">Please fill the form below to make a reservation.</p>
             <em style="font-weight: 500;">NOTE: late arrival will result in your reservation slot being re-assigned.</em>
@@ -40,7 +40,7 @@
             <p >Any required values will be marked by an asterisk (*)</p>
         </section>
 
-        <form id="reservation" action="http://www.example.com/elconuco/reservation">
+        <form class="reservation" action="http://www.example.com/elconuco/reservation">
             <fieldset id="customerInfo">
 
                 <legend> RESERVATION FORM</legend>
@@ -70,15 +70,15 @@
                     <label for="locations">Which Location</label>
                     <select name="locationSrc" id="info" required>
                        <option value="BX">Bronx</option>
-                       <option value="NYC">Manhattan</option>
-                       <option value="Queens" selected>Queens</option>
+                       <option value="NYC" selected>Manhattan</option>
+                       <option value="Queens">Queens</option>
                        <option value="STATEN">Staten Island (that exists??)</option>
                     </select>
                  </div>
      
 
                 <div class="formRow">
-                <input name="mailMe" id="mailCB" value="yes" type="checkbox">
+                <input name="mailMe" id="mailCB" value="yes" type="checkbox" >
                 <label for="mailCB">Send me emails with the special of the day!</label>
                 </div>
                 <div class="formRow">
@@ -92,10 +92,9 @@
                  </div>
  
                  <div class="formRow">
-                     <label for="name">If <strong>yes</strong>, please write them down(separated by commas)</label>
+                     <label for="name">If <strong>yes</strong>, please write them here(separated by commas)</label>
                      <input name="customerAllergies" id="allergies" type="text" placeholder="Ex.:peanut, pinapple, walnuts...">
                   </div>
-      
  
               </fieldset>
               <div id="buttons">
@@ -104,13 +103,25 @@
               </div>
              </fieldset>
         </form>
+
+        <aside>
+            <div class="specialMenu">
+                <p id="specialPar">Ask for our Special!</p>
+                <a href="ec_menu.html">
+                    <img src="ec_sancocho.jpg" alt="picture of sancocho">
+                </a>
+                <p id="foodPar">BEEF SANCOCHO</p>
+            </div>
+        </aside>
+
     </main>
     <footer>
-        <hr />
+        <div class="footerLinks">
         <a href="">HOME</a>
         <a href="ec_menu.html">MENU</a>
         <a href="ec_reservation.html">RESERVATIONS</a>
         <a href="index.html">ABOUT US</a>
+        </div>
         <address> El Conuco <br> 4267 Chelsea<br> West Kraigton, WV USA 10386 <br> <a href="tel:+13217032793">+1-321-703-2793</a></address>
     </footer>
 </body>
