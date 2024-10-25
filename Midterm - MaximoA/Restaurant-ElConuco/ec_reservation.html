@@ -13,12 +13,15 @@
     <link rel="stylesheet" href="ec_reset.css">
     <link rel="stylesheet" href="ec_styling.css">
     <link rel="stylesheet" href="ec_tables.css">
+    <link rel="stylesheet" href="ec_forms.css">
 </head>
 <body>
     <header>
-        <img class="leftHeader" src="ec_unrippedplantain.png" >
+        <a href="index.html">
+        <img class="leftHeader" src="ec_unrippedplantain.png">
         <img class="mainHeader" src="ec_EL_CONUCO.png" alt="El Conuco Icon">
-        <img class="rigthHeader" src="ec_unrippedplantain.png" >
+        <img class="rigthHeader" src="ec_unrippedplantain.png">
+        </a>
     </header>
     <nav>
         <ul>
@@ -29,21 +32,86 @@
         </ul>
     </nav>
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the homepage.</p>
+        <section id="reservation">
+            <h1 >Reservations</h1>
+            <p style="font-weight: 500;">Please fill the form below to make a reservation.</p>
+            <em style="font-weight: 500;">NOTE: late arrival will result in your reservation slot being re-assigned.</em>
+
+            <p >Any required values will be marked by an asterisk (*)</p>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section.</p>
-        </section>
+
+        <form id="reservation" action="http://www.example.com/elconuco/reservation">
+            <fieldset id="customerInfo">
+
+                <legend> RESERVATION FORM</legend>
+                    
+                <div class="formRow">
+                    <label for="visit">Reservation's Date*</label>
+                    <input name="reservDate" id="visit" type="date" required>
+                 </div>
+
+                <div class="formRow">
+                   <label for="name">First and Last Name* </label>
+                   <input name="customerName" id="name" type="text" placeholder="Ex.: John Doe" required>
+                </div>
+    
+                <div class="formRow">
+                   <label for="phone">Phone number*(without dashes)</label>
+                   <input name="customerPhone" id="phone" type="tel"
+                   pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required> 
+                </div>
+    
+                <div class="formRow">
+                   <label for="mail">E-mail</label> 
+                   <input name="customerEmail" id="mail" type="email">
+                </div>   
+
+                <div class="formRow">
+                    <label for="locations">Which Location</label>
+                    <select name="locationSrc" id="info" required>
+                       <option value="BX">Bronx</option>
+                       <option value="NYC">Manhattan</option>
+                       <option value="Queens" selected>Queens</option>
+                       <option value="STATEN">Staten Island (that exists??)</option>
+                    </select>
+                 </div>
+     
+
+                <div class="formRow">
+                <input name="mailMe" id="mailCB" value="yes" type="checkbox">
+                <label for="mailCB">Send me emails with the special of the day!</label>
+                </div>
+                <div class="formRow">
+                    <label>Any Allergies?</label>
+                    <fieldset class="allergiesGroup">
+                       <label for="aYes">Yes</label>
+                       <input name="aFriend" id="aYes" value="yes" type="radio">
+                       <label for="fNo">No</label>
+                       <input name="aFriend" id="aNo" value="no" type="radio">
+                    </fieldset>
+                 </div>
+ 
+                 <div class="formRow">
+                     <label for="name">If <strong>yes</strong>, please write them down(separated by commas)</label>
+                     <input name="customerAllergies" id="allergies" type="text" placeholder="Ex.:peanut, pinapple, walnuts...">
+                  </div>
+      
+ 
+              </fieldset>
+              <div id="buttons">
+                 <input type="submit" value="Complete Reservation">
+                 <input type="reset" value="Cancel">
+              </div>
+             </fieldset>
+        </form>
     </main>
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <hr />
+        <a href="">HOME</a>
+        <a href="ec_menu.html">MENU</a>
+        <a href="ec_reservation.html">RESERVATIONS</a>
+        <a href="index.html">ABOUT US</a>
+        <address> El Conuco <br> 4267 Chelsea<br> West Kraigton, WV USA 10386 <br> <a href="tel:+13217032793">+1-321-703-2793</a></address>
     </footer>
 </body>
 </html>
