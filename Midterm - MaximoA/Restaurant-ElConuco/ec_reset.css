@@ -114,28 +114,36 @@ main {
 
 /*Footer*/
 
-footer {
+footer{
     text-align: center;
     background-color: black;
     color: white;
+    display: flex;
+    width: 100%;
 }
 
+.footerLinks{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
 
-footer a {
+.footerLinks a {
     color: green;
     text-decoration: none;
     font-size: 0.9em;
-    display: inline;
     padding: 10px;
+    
  }
  
- footer a:hover {
+ .footerLinks a:hover {
     text-decoration: underline;
  }
 
  footer address {
-    margin-top: 20px;
     font-style: normal;
+    width: 50%;
+    
  }
  
  @media only screen and (max-width: 640px) {

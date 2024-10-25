@@ -5,9 +5,14 @@
 div#sideFlag {
     padding: 10px;
     margin: 0px;
-    width: 25%;
+    width: 10%;
     height: 100%;
     
+}
+
+main#aboutUs {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 div#sideFlag img{
@@ -17,31 +22,66 @@ div#sideFlag img{
 
 /*Section  */
 article {
-    text-align: center;
+    
     width: 50%;
     height: 80%;
 }
 
-article section h2{
-    font-size: 5vh;
-    padding-bottom: 5px;
+article section h1{
+    text-align: center;
+   font-size: 30px;
 }
 
 article section p {
     font-weight: 400;
-    line-height: 1.2em;
-    margin: 10px 0px;
+    line-height: 1.1em;
+    padding-top: 5px;
 }
 
 section#menu{
     width: 100%;
+}
+
+.menuGrid{
+    align-items: stretch;
+    justify-content: stretch;
+    padding-top: 10px;
     
 }
 
-section#appetizers, section#mainCourse{
-    padding: 20px;
-    width: 100%;
+.menuGrid, .menuGrid .food {
+    display: flex;
+
 }
+
+.menuGrid .food{
+    width: 25%;
+    flex-direction: column;
+    padding: 0px 5px;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.food img{
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+}
+
+.food p {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+section#appetizers, section#mainCourse {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    
+  }
 
 section#appetizers h1, section#mainCourse h1{
     text-align: center;
@@ -49,10 +89,10 @@ section#appetizers h1, section#mainCourse h1{
     border: dotted;
 }
 
-section#appetizers img, section#mainCourse img{
+/* section#appetizers img, section#mainCourse img{
     width: 15%;
     
-}
+} */
 
 section#reservation {
     margin: 20px 3%;
