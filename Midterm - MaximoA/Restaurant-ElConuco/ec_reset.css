@@ -33,27 +33,32 @@ body {
 
 
 /*Header*/
-header {
+header{
     background: rgb(0,99,0);
     background: linear-gradient(90deg, rgba(0,99,0,1) 0%, rgba(6,169,6,1) 100%);
     width: 100%;
-    height: 15vh;
+    height: 14vh;
     display: flex;
     overflow: hidden;
 }
 
-.leftHeader {
-    width: 40%;
-    height: 100%;
-}
-.mainHeader {
-    width: 33%;
-    height: 50%;
-    padding-top: 15px;
+header a {
+    width: 100%;
+    height: 14vh;
 }
 
-.rigthHeader {
-    width: 40%;
+img.leftHeader {
+    width: 33%;
+    height: 100%;
+}
+
+img.mainHeader {
+    width: 33%;
+    height: 90%;
+}
+
+img.rigthHeader {
+    width: 33%;
     height:  100%;
     transform: scaleX(-1);
 }
@@ -79,6 +84,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
+    background: black url(ec_drflagEmoji.png) left/contain no-repeat;
     background-color: green;
 }
 
