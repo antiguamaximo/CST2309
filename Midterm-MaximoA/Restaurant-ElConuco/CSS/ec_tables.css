@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+   Styling table in all pages
+   Maximo Antigua
+
+   Filename: ec_styling.css
+*/
+
+/* Table Styles */
+.schedule {
+    background: rgb(253, 242, 209);
+    border: 5px outset rgb(167, 166, 166);
+    color: green;
+    width: 33%;
+    
+    font-size: .9em;
+    margin: 8px 0px;
+}
+/* Table Cell Styles */
+.schedule th, .schedule td {
+    border: 1px solid gray;
+    padding: 5px;
+    vertical-align: top;
+}
+
+/* Row Group Styles */
+
+.schedule thead {
+    background: green;
+    color: white;
+}
+
+.schedule thead tr,.schedule tbody tr  {
+    height: 20px;
+}
+
+
+/* Column Group Styles */
+ 
+col#timeCols, col#dayCols {
+    background: rgb(255, 255, 255);
+    width: 50%;
+}
