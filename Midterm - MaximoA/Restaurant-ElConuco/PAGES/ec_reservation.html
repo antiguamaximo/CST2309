@@ -10,24 +10,24 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make Your Reservation</title>
-    <link rel="stylesheet" href="ec_reset.css">
-    <link rel="stylesheet" href="ec_styling.css">
-    <link rel="stylesheet" href="ec_tables.css">
-    <link rel="stylesheet" href="ec_forms.css">
+
+    <link rel="stylesheet" href="/Midterm - MaximoA/Restaurant-ElConuco/CSS/ec_base.css">
+    <link rel="stylesheet" href="/Midterm - MaximoA/Restaurant-ElConuco/CSS/ec_styling2.css">
+    <link rel="stylesheet" href="/Midterm - MaximoA/Restaurant-ElConuco/CSS/ec_tables.css">
 </head>
 <body>
     <header>
-        <a href="index.html">
-        <img class="leftHeader" src="ec_unrippedplantain.png">
-        <img class="mainHeader" src="ec_EL_CONUCO.png" alt="El Conuco Icon">
-        <img class="rigthHeader" src="ec_unrippedplantain.png">
+        <a href="/Midterm - MaximoA/Restaurant-ElConuco/index.html">
+        <img class="leftHeader" src="/Midterm - MaximoA/Restaurant-ElConuco/ASSETS/ec_unrippedplantain.png">
+        <img class="mainHeader" src="/Midterm - MaximoA/Restaurant-ElConuco/ASSETS/ec_EL_CONUCO.png" alt="El Conuco Icon">
+        <img class="rigthHeader" src="/Midterm - MaximoA/Restaurant-ElConuco/ASSETS/ec_unrippedplantain.png">
         </a>
     </header>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="ec_menu.html">Menu</a></li>
-            <li><a href="index.html">About Us</a></li>
+            <li><a href="/Midterm - MaximoA/Restaurant-ElConuco/index.html">About Us</a></li>
             <li><a href="ec_reservation.html">Reservation</a></li>
         </ul>
     </nav>
@@ -108,7 +108,7 @@
             <div class="specialMenu">
                 <p id="specialPar">Ask for our Special!</p>
                 <a href="ec_menu.html">
-                    <img src="ec_sancocho.jpg" alt="picture of sancocho">
+                    <img src="/Midterm - MaximoA/Restaurant-ElConuco/ASSETS/ec_sancocho.jpg" alt="picture of sancocho">
                 </a>
                 <p id="foodPar">BEEF SANCOCHO</p>
             </div>
@@ -116,13 +116,37 @@
 
     </main>
     <footer>
-        <div class="footerLinks">
-        <a href="">HOME</a>
-        <a href="ec_menu.html">MENU</a>
-        <a href="ec_reservation.html">RESERVATIONS</a>
-        <a href="index.html">ABOUT US</a>
-        </div>
-        <address> El Conuco <br> 4267 Chelsea<br> West Kraigton, WV USA 10386 <br> <a href="tel:+13217032793">+1-321-703-2793</a></address>
-    </footer>
+        <footer>
+            <div class="footerLinks">
+            <a href="">HOME</a>
+            <a href="/Midterm - MaximoA/Restaurant-ElConuco//PAGES/ec_menu.html">MENU</a>
+            <a href="/Midterm - MaximoA/Restaurant-ElConuco/PAGES/ec_reservation.html">RESERVATIONS</a>
+            <a href="/Midterm - MaximoA/Restaurant-ElConuco/index.html">ABOUT US</a>
+            </div>
+            <table class="schedule">
+                <colgroup>
+                    <col id="dayCols">
+                    <col id="timeCols">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Week Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Mon-Thu</th>
+                        <td span="1">12AM-9PM</td>
+                    </tr>
+                    <tr>
+                        <th>Fri-Sun</th>
+                        <td span="1">10AM-11PM</td>
+                    </tr>
+                </tbody>
+    
+            </table>
+            <address> El Conuco <br> 4267 Chelsea<br> West Kraigton, WV USA 10386 <br> <a href="tel:+13217032793">+1-321-703-2793</a></address>
+        </footer>
 </body>
 </html>

@@ -1,4 +1,11 @@
 @charset "utf-8";
+/*
+   Styling for ALL pages
+   Maximo Antigua
+
+   Filename: ec_styling.css
+   File path: .\CSS\ec_base.css
+*/
 
 * {
     padding: 0;
@@ -24,7 +31,6 @@ body {
     border-left: 3px solid rgb(51, 51, 51);
     border-right: 3px solid rgb(51, 51, 51);
 
-    min-height: 100%;  
     margin: 0px auto;
     min-width: 320px;
     max-width: 1020px;  
@@ -100,7 +106,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    background: black url(ec_drflagEmoji.png) left/contain no-repeat;
+    background: black url("/Midterm - MaximoA/Restaurant-ElConuco/ASSETS/ec_drflagEmoji.png") left/contain no-repeat;
     background-color: green;
 }
 
@@ -144,46 +150,5 @@ footer{
     font-style: normal;
     width: 50%;
     
- }
- 
- @media only screen and (max-width: 640px) {
-
-    header nav ul {
-       display: none;
-    }
-    
-    header nav ul li {
-       font-size: 1em;
-       line-height: 1.3em;
-       height: 1.3em;
-       
-    }
-
-    section h1 {
-       font-size: 1.5em;
-    }
-    
-    section p {
-       font-size: 0.9em;
-    }
-
-
- }
-
- @media only screen and (min-width: 641px) {
-
-    body header nav ul {
-       display: -webkit-flex;
-       display: flex;
-       -webkit-flex-flow: row nowrap;
-       flex-flow: row nowrap;
-       -webkit-justify-content: center;
-       justify-content: center;
-    }
-    
-    body header nav ul li {
-       -webkit-flex: 0 1 auto;
-       flex: 0 1 auto;
-    }
  }
  
