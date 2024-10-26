@@ -23,12 +23,10 @@ section#appetizers h1, section#mainCourse h1 {
     align-items: stretch;
     justify-content: stretch;
     padding-top: 10px;
-    
 }
 
 .menuGrid, .menuGrid .food {
     display: flex;
-
 }
 
 .menuGrid .food{
