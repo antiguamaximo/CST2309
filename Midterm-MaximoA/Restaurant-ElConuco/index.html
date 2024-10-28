@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!-- 
+    Midterm Project
+    CST2309
+    Maximo Antigua
+    Index.html
+
+    FINISHED
+-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Us - El Conuco</title>
+
+    <link rel="stylesheet" href="./CSS/ec_base.css">
+    <link rel="stylesheet" href="./CSS/ec_styling.css">
+    <link rel="stylesheet" href="./CSS/ec_tables.css">
+    
+</head>
+<body>
+    <header>
+        <img class="leftHeader" src="./ASSETS/ec_unrippedplantain.png" alt="PLANTAIN IMG">
+        <img class="mainHeader" src="./ASSETS/ec_EL_CONUCO.png" alt="El Conuco Icon">
+        <img class="rigthHeader" src="./ASSETS/ec_unrippedplantain.png" alt="PLANTAIN IMG">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="ec_menu.html"> Menu</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="ec_reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+    <main id="aboutUs">
+        <figure>
+            <div id="sideFlag">
+                <img src="./ASSETS/ec_dominicanflagBIG.jpg" alt="Dominican flag" title="Dominican Republic's Flag">
+            </div>
+            <figcaption style="text-align: center;">Dios, Patria y Libertad!</figcaption>
+        </figure>
+        <article>
+            <h2>ABOUT US</h2>
+            <section>
+                <hr>
+                    <p>It started as a <strong>dream</strong> for my mother years ago. Owning her own restaurant where she can bring her dishes to others. Now, having it being partially  complete, we strive to provide the best service for our customers.</p>
+                    <br>
+            </section>
+
+            <div class="aboutSection">
+                <section>
+                        <h3> Home Made</h3>
+                        <hr>
+                        <p>All our sauces are home made with fresh ingredients purchase from locals.</p>
+                </section>
+                <section>
+                        <h3> Family Owned</h3>
+                        <hr>
+                        <p>We pride ourselves on being the sole owners of this local, and the majority of our staff is part of the family.</p>
+                </section>
+                <section>
+                        <h3> Our Selection</h3>
+                        <hr>
+                        <p>We have the most popular Dominican dishes and appetizers, as well as offering <em>Dominican coffee!</em></p>
+                </section>
+                <section>
+                        <h3> Music</h3>
+                        <hr>
+                        <p>Tipico, merengue, and bachata are our main play list! Enjoy Dominican music while digesting your food!</p>
+                </section>
+            </div>
+        </article>
+        
+        <div id="bottomLinks">
+            <button onclick="location.href='ec_reservation.html'">Reservations</button>
+
+            <button onclick="location.href='ec_menu.html'">Check Our Menu</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerLinks">
+            <a href="">HOME</a>
+            <a href="ec_menu.html">MENU</a>
+            <a href="ec_reservation.html">RESERVATIONS</a>
+            <a href="index.html">ABOUT US</a>
+        </div>
+        <table class="schedule">
+            <colgroup>
+                <col id="dayCols">
+                <col id="timeCols">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Week Day</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Mon-Thu</th>
+                    <td rowspan="1">12AM-9PM</td>
+                </tr>
+                <tr>
+                    <th>Fri-Sun</th>
+                    <td rowspan="1">10AM-11PM</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <address>	&#169; El Conuco <br> 4267 Chelsea<br> West Kraigton, WV USA 10386 <br> &#9743; <a href="tel:+13217032793">	 +1-321-703-2793</a><br>&#9993; <a href="mailto:example@gnone.com">elconuco@realretaurant.com</a></address>
+    </footer>
+</body>
+</html>

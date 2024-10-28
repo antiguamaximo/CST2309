@@ -1,0 +1,62 @@
+/*
+   Styling for Menu page
+   Maximo Antigua
+
+   Filename: ec_styling3.css
+*/
+
+
+/*                    MENU                             */
+div#menu,
+section#appetizers, section#mainCourse{
+    width: 100%;
+}
+
+section#appetizers, 
+section#mainCourse,
+section#appetizers h1, section#mainCourse h1 {
+    text-align: center;
+}
+
+.menuGrid{
+    align-items: stretch;
+    justify-content: stretch;
+    padding-top: 10px;
+}
+
+.menuGrid, .menuGrid .food {
+    display: flex;
+}
+
+.menuGrid .food{
+    width: 25%;
+    flex-direction: column;
+    padding: 0px 5px;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.food img{
+    width: 180px;
+    height: 180px;
+    border-radius: 120px;
+    border: 6px outset rgb(221, 221, 221);
+}
+
+.food p {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+section#appetizers, section#mainCourse {
+    padding: 10px;
+    box-sizing: border-box;
+    
+  }
+
+section#appetizers h2, section#mainCourse h2{
+    font-size: 3vh;
+    border: 7px outset rgb(167, 166, 166);
+    background-color: rgba(201, 201, 200, 0.5);
+}
