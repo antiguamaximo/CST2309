@@ -1,0 +1,177 @@
+<html>
+
+<head>
+<title> THE FACTORY GYM </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+     body{
+          font-family: latha;
+          color: white;
+           background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.70),rgba(0,0,0,0.28),rgba(0,0,0,0.25)),
+          url(images.jpg);
+           position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+         }
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 23%;
+    padding: 10px 0px 0px 20px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.video{
+	float:left;
+	padding-left:100px;}
+
+
+	
+</style>
+
+
+</head>
+<body>
+    <header>
+    
+      <div class="main">
+        <div class="logo">
+          <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+          
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Contact Us</button>
+              <div class="dropdown-content">
+                <a href="https://goo.gl/maps/m3A9t9pzUaiuRvmdA"target="new">
+                Location</a>
+               <a href="https://www.facebook.com"target="new"> Facebook</a>
+               <a href="https://twitter.com"target="new"> Twitter</a>
+			<a href="https://www.instagram.com"target="new"> Instagram</a>
+			<a href="#"> 1-800-589-4258</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="store.html">store</a></li>
+          <li><a href="member.html">membership</a></li>
+		  <li><a href="survey.html"> Survey </a></li>
+        </ul>
+      </div>
+    
+      </header>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1 style="font-family: 'Russo One', sans-serif;" align="center" style="text-align:right">IMAGES</h1>
+<div class="row">
+  <div class="column">
+    <img src="g1.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="g2.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="g3.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="g4.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="g5.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="g6.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="g7.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="g8.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+  
+  
+
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+<hr style="border-color: red;">
+	
+
+<h1 style="text-align:center;font-family: 'Russo One', sans-serif;">VIDEOS</h1>	
+	
+	<div class= "video">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/W6U6BOGPqts?start=128&autoplay=1&amp;mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/L77b57erQ4M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	</div>
+
+
+</body>
+</html>
