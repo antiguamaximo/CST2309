@@ -12,18 +12,18 @@
 
     // get the mouse position
     const getMousePos = (ev) => {
-        let posx = 0;
-        let posy = 0;
+        let posX = 0;
+        let posY = 0;
         if (!ev) ev = window.event;
         if (ev.pageX || ev.pageY) {
-            posx = ev.pageX;
-            posy = ev.pageY;
+            posX = ev.pageX;
+            posY = ev.pageY;
         }
         else if (ev.clientX || ev.clientY) 	{
-            posx = ev.clientX + body.scrollLeft + docEl.scrollLeft;
-            posy = ev.clientY + body.scrollTop + docEl.scrollTop;
+            posX = ev.clientX + body.scrollLeft + docEl.scrollLeft;
+            posY = ev.clientY + body.scrollTop + docEl.scrollTop;
         }
-        return {x: posx, y: posy};
+        return {x: posX, y: posY};
     }
 
     // mousePos: current mouse position
@@ -158,7 +158,7 @@
     }
 
     /***********************************/
-    /********** Preload stuff **********/
+    /********** Preload stuff **********/ // TO BE REMOVED, NOT NEEDED FOR A PROJECT OF THIS SCALE
 
     // Preload images
     const preloadImages = () => {
