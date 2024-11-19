@@ -1,97 +1,80 @@
 
-function Order(CardName, CardNumber, ExpirationMonth, ExpirationYear, CVC)
+function order(firstName, lastName ,cardName, cardNumber, expnMonth, expYear, cvc)
 {
-	this.Firstname= Firstname;
-	this.Lastname= Lastname;
-	this.Password= Password;
-   this.CardName = CardName;
-   this.CardNumber = CardNumber;
-   this.ExpirationMonth = ExpirationMonth;
-   this.ExpirationYear = ExpirationYear;
-   this.CVC = CVC;
+	this.firstName= firstName;
+	this.lastName= lastName;
+	this.password= password;
+	this.cardName = cardName;
+	this.cardNumber = cardNumber;
+	this.expMonth = expMonth;
+	this.expYear = expYear;
+	this.cvc = cvc;
 }
-
-
-
-
-
 	  
-function ValidateForm(Firstname, Lastname, Password, CardName,CardNumber,ExpirationMonth, ExpirationYear, CVC)
+function ValidateForm(firstName, lastName, password, cardName,cardNumber,expMonth, expYear, cvc)
 {
    var letters = /^[A-Za-z\s]+$/;  
-   if(Firstname.value.match(letters))  
+   if(firstName.value.match(letters))  
     {
 		var letters = /^[A-Za-z\s]+$/;  
-		if(Lastname.value.match(letters))
+		if(lastName.value.match(letters))
 		{  
 			var pattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/; 
-			if(Password.value.match(pattern))  
+			if(password.value.match(pattern))  
 				{
 					var letters = /^[A-Za-z\s]+$/;  
-					if(CardName.value.match(letters))  
-						{  
-				  
-						  
-						
-							  var cardno = /^([0-9]{16})$/;  
-							  if(CardNumber.value.match(cardno))  
+					if(cardName.value.match(letters))  
+						{
+							  var cardNum = /^([0-9]{16})$/;  
+							  if(cardNumber.value.match(cardNum))  
 									{  
-								  alert('Your  card accepted');  
-								  
-										  var cardmonth = /^([0-9]{2})$/;  
-										  if(ExpirationMonth.value.match(cardmonth))  
+								  alert('Your card accepted');  
+										  var cardMonth = /^([0-9]{2})$/;  
+										  if(expMonth.value.match(cardMonth))  
 												{  
-											  alert('Your  card month accepted');  
-
-													  var cardyear = /^([0-9]{4})$/;  
-													  if(ExpirationYear.value.match(cardyear))  
+											  alert('Your card month accepted');  
+													  var cardYear = /^([0-9]{4})$/;  
+													  if(expYear.value.match(cardYear))  
 															{  
 														  alert('Your  card year accepted');  
-
-																  var cardcvc = /^([0-9]{3})$/;  
-																  if(CVC.value.match(cardcvc))  
+																  var cardCvc = /^([0-9]{3})$/;  
+																  if(cvc.value.match(cardCvc))  
 																		{  
-																	  alert('Your  card CVC accepted');  
 																	  return true;  
 																		}  
 																	  else  
 																		{  
-																		alert("Not a valid credit card CVC! 3 Numeric required");  
+																		alert("Invalid CVC! 3 Numbers required");  
 																		return false;  
 																		}
-														  
 															}  
 														  else  
 															{  
-															alert("Not a valid credit card year! 4 Numeric required");  
+															alert("Not a valid credit card year! 4 Numbers required");  
 															return false;  
 															}
-											  
 												}  
 											  else  
 												{  
-												alert("Not a valid credit card month! 2 Numeric required");  
+												alert("Not a valid credit card month! 2 Numbers required");  
 												return false;  
 												}			  
-								  
 									}  
 								  else  
 									{  
-									alert("Not a valid credit card number! 16 Numeric required");  
+									alert("Not a valid credit card number! 16 Numbers required");  
 									return false;  
 									}  
-						  
 						}  
 						else  
 						{  
 						alert('Please input alphabet characters only');  
 						return false;  
 						}  
-						
 				}  
 						else  
 						{  
-						alert('Must contain at least one number and one special charactcters and one uppercase and lowercase letter, and at least 8 or more characters');  
+						alert('Must contain at least one number and one special character and one uppercase and lowercase letter, and at least 8 or more characters');  
 						return false;  
 						}  	
 			}  
@@ -99,17 +82,12 @@ function ValidateForm(Firstname, Lastname, Password, CardName,CardNumber,Expirat
 			{  
 			alert('Please input alphabet characters only');  
 			return false;  
-			}  
-
-						
+			}				
 	}  
 		else  
 		{  
 		alert('Please input alphabet characters only');  
 		return false;  
-		}  
-
-
-
+		}
 }
 
