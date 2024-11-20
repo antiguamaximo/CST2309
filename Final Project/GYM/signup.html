@@ -1,0 +1,246 @@
+<html>
+
+<head>
+<title> THE FACTORY GYM </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+ body{
+          font-family: latha;
+          color: white;
+           background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.65),rgba(0,0,0,0.55),rgba(0,0,0,0.25)),
+          url(back.jpg);
+           position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+         }
+   
+     position:absolute; 
+     top:30%; 
+     left:19.3%; t
+     ext-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     overflow: auto;
+     margin-top:6%;
+     padding: 0px 15px 60px 15px;
+     }
+         
+
+     
+	.logo img {
+  float: left;
+  width: 140px;
+  height: 110px;
+  position: absolute;
+}
+         
+     .order{background-color:black; 
+     opacity: .4; 
+     width:60.4%; 
+     height:45%; 
+     position:absolute; 
+     top:34%; 
+     left:19.3%; 
+     text-align: center;
+     }
+         
+          
+    
+     hr{   
+     margin: auto;
+     width: 145px;
+     height: 1.5px;
+     background: rose;
+     margin-bottom: 30px;
+     }
+   
+</style>
+<script>
+function Order(CardName, CardNumber, ExpirationMonth, ExpirationYear, CVC)
+{
+	this.Firstname= Firstname;
+	this.Lastname= Lastname;
+	this.Password= Password;
+   this.CardName = CardName;
+   this.CardNumber = CardNumber;
+   this.ExpirationMonth = ExpirationMonth;
+   this.ExpirationYear = ExpirationYear;
+   this.CVC = CVC;
+}
+
+
+
+
+
+	  
+function ValidateForm(Firstname, Lastname, Password, CardName,CardNumber,ExpirationMonth, ExpirationYear, CVC)
+{
+   var letters = /^[A-Za-z\s]+$/;  
+   if(Firstname.value.match(letters))  
+    {
+		var letters = /^[A-Za-z\s]+$/;  
+		if(Lastname.value.match(letters))
+		{  
+			var pattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/; 
+			if(Password.value.match(pattern))  
+				{
+					var letters = /^[A-Za-z\s]+$/;  
+					if(CardName.value.match(letters))  
+						{  
+				  
+						  
+						
+							  var cardno = /^([0-9]{16})$/;  
+							  if(CardNumber.value.match(cardno))  
+									{  
+								  alert('Your  card accepted');  
+								  
+										  var cardmonth = /^([0-9]{2})$/;  
+										  if(ExpirationMonth.value.match(cardmonth))  
+												{  
+											  alert('Your  card month accepted');  
+
+													  var cardyear = /^([0-9]{4})$/;  
+													  if(ExpirationYear.value.match(cardyear))  
+															{  
+														  alert('Your  card year accepted');  
+
+																  var cardcvc = /^([0-9]{3})$/;  
+																  if(CVC.value.match(cardcvc))  
+																		{  
+																	  alert('Your  card CVC accepted');  
+																	  return true;  
+																		}  
+																	  else  
+																		{  
+																		alert("Not a valid credit card CVC! 3 Numeric required");  
+																		return false;  
+																		}
+														  
+															}  
+														  else  
+															{  
+															alert("Not a valid credit card year! 4 Numeric required");  
+															return false;  
+															}
+											  
+												}  
+											  else  
+												{  
+												alert("Not a valid credit card month! 2 Numeric required");  
+												return false;  
+												}			  
+								  
+									}  
+								  else  
+									{  
+									alert("Not a valid credit card number! 16 Numeric required");  
+									return false;  
+									}  
+						  
+						}  
+						else  
+						{  
+						alert('Please input alphabet characters only');  
+						return false;  
+						}  
+						
+				}  
+						else  
+						{  
+						alert('Must contain at least one number and one special charactcters and one uppercase and lowercase letter, and at least 8 or more characters');  
+						return false;  
+						}  	
+			}  
+			else  
+			{  
+			alert('Please input alphabet characters only');  
+			return false;  
+			}  
+
+						
+	}  
+		else  
+		{  
+		alert('Please input alphabet characters only');  
+		return false;  
+		}  
+
+
+
+}
+
+
+</script>
+</head>
+<body>
+
+    <header>
+
+    
+      <div class="main">
+        <div class="logo">
+          <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+          
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Contact Us</button>
+              <div class="dropdown-content">
+                <a href="https://goo.gl/maps/m3A9t9pzUaiuRvmdA"target="new">
+                Location</a>
+               <a href="https://www.facebook.com"target="new"> Facebook</a>
+               <a href="https://twitter.com"target="new"> Twitter</a>
+			<a href="https://www.instagram.com"target="new"> Instagram</a>
+			<a href="#"> 1-800-589-4258</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="store.html">store</a></li>
+          <li><a href="member.html">membership</a></li>
+		  <li><a href="survey.html"> Survey </a></li>
+        </ul>
+      
+      </div>
+    
+      </header>
+<br/>
+<br/>
+<br/>
+<div class="order">
+<table align="center" style="text-align:right">
+<form name = "myForm" action = "http://www.WebsiteDevelopmentBook.com/FormEcho.php" method = "post" onsubmit = "return ValidateForm(Address, Item, Firstname, Lastname, Password, CardName, CardNumber, ExpirationMonth, ExpirationYear, CVC)" >
+
+<tr><td>Address:</td><td> <input type= "text" name = "Address"/> </td></tr>
+<tr><td>Item(s):</td><td><select required name="Item" multiple>
+<option value="" disabled> Select  your  Package </option>
+<option value="standar"> Standard package </option>
+<option value="golden">Golden package</option>
+<option value="premium">premium package</option>
+</select>
+<tr><td>First Name:</td><td> <input type = "text" name = "Firstname" /></td></tr>
+<tr><td>Last Name:</td><td> <input type = "text" name = "Lastname" /></td></tr>
+<tr><td>Password:</td><td> <input type= "text" name= "Password" /></td></tr>
+<tr><td>Name on Card:</td><td> <input type = "text" name = "CardName" /></td></tr>
+<tr><td>Number on Card:</td><td> <input type = "text" name = "CardNumber" /></td></tr>
+<tr><td>Expiration Month:</td><td> <input type= "text" name= "ExpirationMonth" /></td></tr>
+<tr><td>Expiration Year:</td><td> <input type= "text" name= "ExpirationYear" /></td></tr>
+<tr><td>CVC: </td><td><input type="text" name="CVC" /></td></td>
+
+
+<tr><td colspan="2" style="text-align:center"><input type = "submit" value = "Sign Up" /></td></tr>
+
+
+</form>
+</table>
+</div>
+
+
+</body>
+</html>
