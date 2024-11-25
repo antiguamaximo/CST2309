@@ -4,14 +4,20 @@
    Tutorial Case
 
    Countdown Clock
-   Author: Maximo Antigua  
-   Date:   111824
+   Author: 
+   Date:   
 
 */
 /* Execute the function to run and display the countdown clock */
+
+
 runClock();
 setInterval("runClock()", 1000);
+
+
 /*Function to craete and run the countdown clock */
+
+
 function runClock() {
 
    /*Store the current date and time */
@@ -42,3 +48,5 @@ function runClock() {
    document.getElementById("mins").textContent = Math.floor(minsLeft);
    document.getElementById("secs").textContent = Math.floor(secsLeft);
 }
+
+
