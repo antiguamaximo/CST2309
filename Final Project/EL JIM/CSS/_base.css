@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+h2, h3, a {
+    color: #34495e;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Header and Navigation*/
+
+.gymLogo {
+    font-size: 1.45em;
+}
+
+.gymNav {
+    margin-top: 5px;
+}
+
+.gymLogo a, .gymNav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.gymNav a {
+    color: #34495e;
+    font-size: .99em;
+}
+
+.gymNav a:hover {
+    color: #718daa;
+}
+
+.gymHeader {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #a2a2a2;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+/*footer*/
+
+footer{
+    background:black;
+    padding:30px 0px;
+    text-align:center;
+    }
+    
+footer .row a{
+    text-decoration:none;
+    color: #718daa;
+    transition:0.5s;
+    }
+    
+footer .row a:hover{
+    color:#fff;
+    }
+    
+footer .row ul{
+    width:100%;
+    }
+    
+footer .row ul li{
+    display:inline-block;
+    margin:0px 20px;
+    }
+    
+address{
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color:gray;
+        font-size:0.8em;
+        }
+
+
+
+/*Media queries*/
+
+@media (min-width: 769px) {
+	.gymHeader,
+	.gymNav {
+		display: flex;
+	}
+	.gymHeader {
+		flex-direction: column;
+		align-items: center;
+    	.gymHeader{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+    /*Footer*/
+    footer{
+        text-align:center;
+        padding:5%;
+        }
+        footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:center;
+        }
+}
+
+@media (min-width: 1025px) {
+	.gymHeader {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
