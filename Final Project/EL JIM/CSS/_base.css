@@ -1,8 +1,17 @@
-
+@charset "utf-8";
+/*
+    Final Project
+    CST2309
+    Maximo Antigua
+    Index.html
+*/
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5;
 }
 
 body {
@@ -63,37 +72,36 @@ a {
 
 footer{
     background:black;
-    padding:30px 0px;
+    padding: 10px 0px;
     text-align:center;
-    }
+    width: 100%;
+}
     
 footer .row a{
     text-decoration:none;
     color: #718daa;
     transition:0.5s;
-    }
+}
     
 footer .row a:hover{
     color:#fff;
-    }
+}
     
 footer .row ul{
     width:100%;
-    }
+}
     
 footer .row ul li{
     display:inline-block;
     margin:0px 20px;
-    }
+}
     
 address{
-        width:100%;
-        margin:1% 0%;
-        padding:0.6% 0%;
-        color:gray;
-        font-size:0.8em;
-        }
-
+    margin:1px 0px;
+    padding: 1px 0px;
+    color:gray;
+    font-size:0.8em;
+}
 
 
 /*Media queries*/
@@ -115,13 +123,16 @@ address{
     /*Footer*/
     footer{
         text-align:center;
-        padding:5%;
         }
         footer .row ul li{
         display:block;
         margin:10px 0px;
         text-align:center;
         }
+    address {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 1025px) {
