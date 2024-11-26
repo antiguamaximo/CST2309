@@ -4,12 +4,18 @@
       Chapter case
 
       Order Form Code
-      Author: 
-      Date:   
+      Author: Maximo Antigua
+      Date:   11/26/2024
 
       Filename: js06b.js
  */
+window.addEventListener("load", function() {
+   let orderForm = document.forms.orderForm;
+   let model = orderForm.elements.model;
 
+   // Select Model selection list when form opens
+   model.focus();
+})
 
 
 
