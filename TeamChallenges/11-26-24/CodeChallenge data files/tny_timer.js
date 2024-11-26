@@ -24,7 +24,6 @@ function showClock() {
    document.getElementById("days").textContent = Math.floor(j4Date);
    var hrsLeft =(j4Date - Math.floor(j4Date))*24;
    document.getElementById("hrs").textContent = Math.floor(hrsLeft);
-
    var minsLeft = (hrsLeft - Math.floor(hrsLeft))*60;
    var secsLeft = (minsLeft - Math.floor(minsLeft))*60;
    document.getElementById("mins").textContent = Math.floor(minsLeft);
