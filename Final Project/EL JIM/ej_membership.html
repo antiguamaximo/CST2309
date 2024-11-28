@@ -9,8 +9,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AMembership - EL JIM</title>
-
+        <title>Membership</title>
+        <link rel="icon" href="./ASSETS/ej_smallLogo.png">
         <link rel="stylesheet" href="./CSS/_base.css">
         <link rel="stylesheet" href="./CSS/_styling.css">
     </head>
@@ -28,7 +28,41 @@
         </header>
 
         <main>
+            <form action="#">
 
+                <label for="fName">First name:</label><br>
+            
+                <input type="text" name="firstName" value="John"><br>
+            
+                <label for="lName">Last name:</label><br>
+            
+                <input type="text" name="lastName" value="Doe"><br>
+            
+                <label for="email">Email:</label><br>
+            
+                <input type="email" name="email" value="example@example.com"><br>
+            
+                <label for="phone">Phone:</label><br>
+            
+                <input type="tel" name="phone" value="555-555-5555"><br>
+            
+                <label for="membership">Select a membership:</label><br>
+            
+                <select name="membership">
+            
+                  <option value="" selected disabled hidden>-- Select one --</option>
+            
+                  <option value="membership 1">membership 1</option>
+            
+                  <option value="membership 2">membership 2</option>
+            
+                  <option value="membership 3">membership 3</option>
+            
+                </select><br>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
         </main>
 
         <footer>
@@ -42,7 +76,7 @@
             </div>
         
             <address>
-                &#169; El JIM <br> 4267 Chelsea West Kraigton, WV USA 10386 <br> &#9743; <a href="tel:+13217032793">	 +1-321-703-2793</a><br>&#9993; <a href="mailto:example@gnone[.]com">eljim@realgym.com</a>
+                &#169; <script>document.write(new Date().getFullYear())</script> El JIM  <br> &#9743; <a href="tel:+13217032793">	 +1-321-703-2793</a><br>&#9993; <a href="mailto:example@gnone[.]com">eljim@realgym.com</a>
             </address>
     </footer>
     </body>
