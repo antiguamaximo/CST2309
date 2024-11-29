@@ -14,9 +14,11 @@
     line-height: 1.5;
 }
 
-body {
+body, html {
     line-height: 1.6;
     min-height: 100vh;
+    height: 100%;
+
 }
 
 ul {
@@ -69,38 +71,52 @@ a {
 }
 
 /*footer*/
-
 footer{
-    background:black;
-    padding: 10px 0px;
-    text-align:center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
     width: 100%;
 }
-    
-footer .row a{
+
+.footerLinks{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinks a {
+    font-size: 1em;
+    padding: 10px 10px;
     text-decoration:none;
     color: #718daa;
-    transition:0.5s;
 }
-    
-footer .row a:hover{
+ 
+.footerLinks a:hover {
     color:#fff;
 }
-    
-footer .row ul{
-    width:100%;
+
+footer address {
+    font-style: normal;
+    width: 50%;
 }
-    
-footer .row ul li{
-    display:inline-block;
-    margin:0px 20px;
+ 
+address {
+    color: #718daa;
 }
-    
-address{
-    margin:1px 0px;
-    padding: 1px 0px;
-    color:gray;
-    font-size:0.8em;
+
+address a:hover {
+    color:#fff;
+}
+
+.footerImage {
+    width: 25%;
+    align-content: center;
+}
+
+.footerImage img {
+    width: 70%;
+    height: auto;
 }
 
 
@@ -124,15 +140,16 @@ address{
     footer{
         text-align:center;
         }
-        footer .row ul li{
+        .footerLinks li, .address{
         display:block;
-        margin:10px 0px;
+        margin:5px;
         text-align:center;
         }
     address {
         display: flex;
         flex-direction: column;
     }
+
 }
 
 @media (min-width: 1025px) {
