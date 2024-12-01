@@ -3,145 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form with Sliding Background</title>
+  <title>Register Button</title>
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
+    body {
+      font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-      color: white;
-      display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 10px 20px;
-      z-index: 10; /* Ensures nav is above the slider */
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
     }
-    nav a {
+    .register-button {
+      background: linear-gradient(90deg, #333, #777);
       color: white;
-      text-decoration: none;
-      margin: 0 10px;
+      border: 2px solid #555;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      font-size: 18px;
       font-weight: bold;
-    }
-    main {
-      position: relative;
-      flex: 1; /* Ensure the main content stretches */
-      display: flex;
-      justify-content: flex-end; /* Align form to the right */
-      align-items: center; /* Center form vertically */
-      padding-right: 50px;
-      overflow: hidden;
-    }
-    .slider {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 300%; /* Width = 100% * number of images */
-      height: 100%;
-      display: flex;
-      transition: transform 1s ease-in-out; /* Smooth slide effect */
-      z-index: 1; /* Ensure slider stays behind nav and form */
-    }
-    .slide {
-      flex: 0 0 100%; /* Each slide takes 100% width */
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-    .form-container {
-      position: relative;
-      z-index: 2; /* Ensures form is above the slider */
-      background: rgba(255, 255, 255, 0.9); /* Translucent background */
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      width: 300px;
-    }
-    form input, form button {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    form button {
-      background-color: #007BFF;
-      color: white;
-      border: none;
+      border-radius: 5px;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
     }
-    form button:hover {
-      background-color: #0056b3;
-    }
-    footer {
-      background: rgba(0, 0, 0, 0.7); /* Match navigation bar */
-      color: white;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-      z-index: 10; /* Keep above background slider */
-      position: relative;
-    }
-    footer a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
+    .register-button:hover {
+      background: #555;
+      color: #f4f4f4;
+      border-color: #333;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <nav>
-    <div>My Website</div>
-    <div>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-  <main>
-    <div class="slider" id="slider">
-      <div class="slide" style="background-image: url('background1.jpg');"></div>
-      <div class="slide" style="background-image: url('background2.jpg');"></div>
-      <div class="slide" style="background-image: url('background3.jpg');"></div>
-    </div>
-    <div class="form-container">
-      <form>
-        <h2>Registration Form</h2>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="password" placeholder="Password" required>
-        <input type="password" placeholder="Confirm Password" required>
-        <button type="submit">Register</button>
-      </form>
-    </div>
-  </main>
-  <footer>
-    &copy; 2024 My Website | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a>
-  </footer>
-
-  <script>
-    const slider = document.getElementById('slider');
-    const slides = document.querySelectorAll('.slide');
-    let currentIndex = 0;
-
-    function slideBackground() {
-      currentIndex = (currentIndex + 1) % slides.length; // Loop through slides
-      slider.style.transform = `translateX(-${currentIndex * 100}%)`; // Slide to the next image
-    }
-
-    // Change slide every 5 seconds
-    setInterval(slideBackground, 5000);
-  </script>
+  <button class="register-button">Register with us today!</button>
 </body>
 </html>
