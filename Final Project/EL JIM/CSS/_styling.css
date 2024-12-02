@@ -5,7 +5,8 @@
     Maximo Antigua
     
 */
-  /*Index CSS*/
+
+/*Index CSS*/
 main {
     background-color: rgba(150, 149, 149, 0.5);
     width: 100%;
@@ -62,11 +63,11 @@ main {
     transform: scale(1.05);
 }
 
- /*Gallery CSS*/
+/*Gallery CSS*/
 
 
 
- /*Membership CSS*/
+/*Membership CSS*/
 
 .membershipPage {
     background: url('../ASSETS/ej_GYM2.jpg') no-repeat center center/cover;
