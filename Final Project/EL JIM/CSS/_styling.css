@@ -21,6 +21,7 @@ main {
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .mainArticles p {
     width: 50%;
     padding: 15px;
@@ -30,8 +31,8 @@ main {
 .mainArticles img {
     max-width: 50%;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 1em;
     flex: 1;
 }
@@ -67,21 +68,21 @@ main {
 
  /*Membership CSS*/
 
-.membersipPage {
+.membershipPage {
     background: url('../ASSETS/ej_GYM2.jpg') no-repeat center center/cover;
     height: 100%;
     display: flex;
     justify-content: flex-end; 
     align-items: center; 
     padding-right: 50px; 
-
 }
+
 .form {
     background: rgba(255, 255, 255, 0.9); 
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-    width: 500px;
+    width: 400px;
 }
 
 form input, form button {
@@ -90,6 +91,7 @@ form input, form button {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+   
 }
 form button {
     background-color: #202020;
