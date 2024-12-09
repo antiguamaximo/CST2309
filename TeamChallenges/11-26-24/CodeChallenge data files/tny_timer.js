@@ -1,33 +1,43 @@
+"use strict";
 /*
    New Perspectives on HTML5 and CSS3, 8th Edition
    Tutorial 9
    Review Assignment
 
    Event Timer
-   Author: Maximo Antigua
-   Date:   11/25/24
+   Author: Maximo Antigua  
+   Date:   091224
 
 */
 showClock();
+
 setInterval("showClock()", 1000);
 
-
-
 function showClock() {
-   var thisDay = new Date("May 9, 2021 09:31:27");
+   var thisDay = new Date();
    var localDate = thisDay.toLocaleDateString();
    var localTime = thisDay.toLocaleTimeString();
-   document.getElementById("currentTime").innerHTML = localDate +"<br>"+ localTime;
-   var j4Date = nextJuly4(thisDay());
 
-   // j4Date = j4Date.setHours(21);
-   document.getElementById("days").textContent = Math.floor(j4Date);
-   var hrsLeft =(j4Date - Math.floor(j4Date))*24;
-   document.getElementById("hrs").textContent = Math.floor(hrsLeft);
+   document.getElementById("localDate").textContent = localDate;
+   document.getElementById("localTime").textContent = localTime;
+
+   var j4Date = nextJuly4(thisDay);
+   j4Date.setHours(21);
+
+   /*Calculate the days until January 1st */
+   var daysLeft = (j4Date - thisDay)/(1000*60*60*24);
+   
+   /*Display the time left until New Year's Eve */
+   document.getElementById("dLeft").textContent = Math.floor(daysLeft);
+   /*Calculate  the hours left in the current day*/
+   var hrsLeft =(daysLeft - Math.floor(daysLeft))*24;
+   document.getElementById("hLeft").textContent = Math.floor(hrsLeft);
+   
+   /* Calculate the minutes and seconds left in the current hour */
    var minsLeft = (hrsLeft - Math.floor(hrsLeft))*60;
    var secsLeft = (minsLeft - Math.floor(minsLeft))*60;
-   document.getElementById("mins").textContent = Math.floor(minsLeft);
-   document.getElementById("secs").textContent = Math.floor(secsLeft);
+   document.getElementById("mLeft").textContent = Math.floor(minsLeft);
+   document.getElementById("sLeft").textContent = Math.floor(secsLeft);
 
 }
 
